@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/rafaelnsantos/react-lottie/compare/v1.0.0...v1.0.1) (2020-06-30)
+
+
+### Bug Fixes
+
+* disable publish on pull requests ([2b071ab](https://github.com/rafaelnsantos/react-lottie/commit/2b071ab7f90d1ecd4d9d140ceeb533aa3985727c))
+
 # 1.0.0 (2020-06-30)
 
 

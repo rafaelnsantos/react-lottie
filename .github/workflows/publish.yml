@@ -1,6 +1,12 @@
 name: Node.js CI
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - none
 
 env:
   NPM_TOKEN: ${{secrets.NPM_TOKEN}}

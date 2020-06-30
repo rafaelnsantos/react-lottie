@@ -1,6 +1,6 @@
 {
   "name": "@rafaelns/react-lottie",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "Rafael Santos",
   "scripts": {
     "commit": "git-cz",

@@ -1,0 +1,31 @@
+name: Test Pull Request
+
+on: [pull_request]
+
+env:
+  NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+
+    - name: Cache node_modules
+      uses: actions/cache@v2
+      with:
+        path: node_modules
+        key: node_modules-${{ hashFiles('**/yarn.lock') }}
+        restore-keys: |
+          node_modules-
+
+    - name: Cypress run
+      run: |
+        yarn --frozen-lockfile
+        yarn test

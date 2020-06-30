@@ -1,0 +1,14 @@
+node_modules/
+src/
+.eslintignore
+.eslintrc.js
+.prettierrc.js
+rollup.config.js
+tsconfig.json
+*.log
+commitlint.config.js
+husky.config.js
+CHANGELOG.md
+release.config.js
+.dependabot/
+.github/

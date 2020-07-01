@@ -7,7 +7,8 @@ import React, {
 } from 'react';
 import lottie, { AnimationConfigWithData, AnimationItem } from 'lottie-web';
 
-interface LottieParams extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
+interface LottieParams
+  extends Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, 'ref'> {
   source: AnimationConfigWithData['animationData'];
   autoPlay?: boolean;
   loop?: boolean;
@@ -16,13 +17,12 @@ interface LottieParams extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>,
   onLoaded?: (anim: AnimationItem) => void;
 }
 
-export const Lottie = ({
+const Lottie = ({
   source,
   autoPlay = false,
   loop = true,
   speed = 1,
   animationRef,
-  onLoaded,
   ...props
 }: LottieParams): JSX.Element => {
   const animRef = useRef<AnimationItem>();
@@ -45,11 +45,11 @@ export const Lottie = ({
     }
 
     animRef.current.setSpeed(speed);
-
-    if (onLoaded) onLoaded(animRef.current);
   }, []);
 
   return <div ref={divRef} {...props}></div>;
 };
 
 export type { AnimationItem };
+
+export default Lottie;

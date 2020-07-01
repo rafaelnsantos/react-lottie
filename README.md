@@ -22,8 +22,6 @@ or
 npm i --save @rafaelns/react-lottie
 ```
 
-Go to your ios folder and run:
-
 ## Usage
 
 LottieView can be used in a declarative way:

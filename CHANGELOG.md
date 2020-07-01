@@ -1,3 +1,11 @@
+# [1.1.0](https://github.com/rafaelnsantos/react-lottie/compare/v1.0.2...v1.1.0) (2020-07-01)
+
+
+### Features
+
+* added prop onLoaded ([458bb20](https://github.com/rafaelnsantos/react-lottie/commit/458bb207d1108fb0ba45c0742f2ca2b2a2993ce8))
+* config release rules ([bd1c330](https://github.com/rafaelnsantos/react-lottie/commit/bd1c330f0380824f0a5920b69adf60eeb2fda7a4))
+
 ## [1.0.2](https://github.com/rafaelnsantos/react-lottie/compare/v1.0.1...v1.0.2) (2020-06-30)
 
 

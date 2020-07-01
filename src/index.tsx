@@ -1,11 +1,9 @@
-/* eslint-disable react/display-name */
 import React, {
-  useMemo,
-  useState,
   useEffect,
   DetailedHTMLProps,
   HTMLAttributes,
   MutableRefObject,
+  useRef,
 } from 'react';
 import lottie, { AnimationConfigWithData, AnimationItem } from 'lottie-web';
 
@@ -15,6 +13,7 @@ interface LottieParams extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>,
   loop?: boolean;
   speed?: number;
   animationRef?: MutableRefObject<AnimationItem | undefined> | ((anim: AnimationItem) => void);
+  onLoaded?: (anim: AnimationItem) => void;
 }
 
 export const Lottie = ({
@@ -23,34 +22,32 @@ export const Lottie = ({
   loop = true,
   speed = 1,
   animationRef,
+  onLoaded,
   ...props
 }: LottieParams): JSX.Element => {
-  const [element, setElement] = useState<Element | null>();
-
-  const anim = useMemo(
-    () =>
-      lottie.loadAnimation?.({
-        animationData: source,
-        autoplay: autoPlay,
-        loop: loop,
-        container: element as Element,
-      }),
-    [element]
-  );
+  const animRef = useRef<AnimationItem>();
+  const divRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    anim.setSpeed(speed);
-  }, [speed]);
+    animRef.current = lottie.loadAnimation({
+      animationData: source,
+      autoplay: autoPlay,
+      loop: loop,
+      container: divRef.current as Element,
+    });
 
-  useEffect(() => {
     if (animationRef) {
       if (typeof animationRef === 'function') {
-        animationRef(anim);
+        animationRef(animRef.current);
       } else {
-        animationRef.current = anim;
+        animationRef.current = animRef.current;
       }
     }
-  }, [anim]);
 
-  return <div ref={(c) => setElement(c)} {...props}></div>;
+    animRef.current.setSpeed(speed);
+
+    if (onLoaded) onLoaded(animRef.current);
+  }, []);
+
+  return <div ref={divRef} {...props}></div>;
 };

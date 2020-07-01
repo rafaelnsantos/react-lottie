@@ -1,3 +1,12 @@
+## [1.3.1](https://github.com/rafaelnsantos/react-lottie/compare/v1.3.0...v1.3.1) (2020-07-01)
+
+
+### Bug Fixes
+
+* analisys before release ([ff55dff](https://github.com/rafaelnsantos/react-lottie/commit/ff55dff7bb70c8fbb676f13b16ccc1e490c6945a))
+* sonar.organization ([b254aab](https://github.com/rafaelnsantos/react-lottie/commit/b254aabbc7573b089ec3c02a8efb714fbbcc43ae))
+* sonar.sources ([9b29072](https://github.com/rafaelnsantos/react-lottie/commit/9b29072818692c5e08baf6672d6f0c5e3610e8a2))
+
 # [1.3.0](https://github.com/rafaelnsantos/react-lottie/compare/v1.2.0...v1.3.0) (2020-07-01)
 
 

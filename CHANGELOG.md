@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/rafaelnsantos/react-lottie/compare/v1.2.0...v1.3.0) (2020-07-01)
+
+
+### Features
+
+* add sonarcloud ([6ac3bc2](https://github.com/rafaelnsantos/react-lottie/commit/6ac3bc259148359ec5ce8ff2e5b2d470c5c43c20))
+
 # [1.2.0](https://github.com/rafaelnsantos/react-lottie/compare/v1.1.1...v1.2.0) (2020-07-01)
 
 

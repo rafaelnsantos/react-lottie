@@ -12,7 +12,6 @@
   "homepage": "https://github.com/rafaelnsantos/react-lottie#readme",
   "scripts": {
     "commit": "git-cz",
-    "prebuild": "rimraf dist types",
     "build": "rollup -c",
     "release": "semantic-release",
     "test": "yarn build"
@@ -57,7 +56,6 @@
     "eslint-plugin-standard": "^4.0.1",
     "husky": "^4.2.5",
     "prettier": "^2.0.5",
-    "rimraf": "^3.0.2",
     "rollup": "^2.15.0",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-peer-deps-external": "^2.2.2",

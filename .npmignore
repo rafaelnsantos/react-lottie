@@ -12,3 +12,4 @@ CHANGELOG.md
 release.config.js
 .dependabot/
 .github/
+*.md

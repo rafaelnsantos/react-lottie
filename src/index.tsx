@@ -51,3 +51,5 @@ export const Lottie = ({
 
   return <div ref={divRef} {...props}></div>;
 };
+
+export type { AnimationItem };

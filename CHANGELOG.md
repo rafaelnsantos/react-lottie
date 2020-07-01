@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/rafaelnsantos/react-lottie/compare/v1.1.0...v1.1.1) (2020-07-01)
+
+
+### Bug Fixes
+
+* export AnimationItem ([b8133b7](https://github.com/rafaelnsantos/react-lottie/commit/b8133b71ae5b7a71ab4e90dd8a08edfff4c0175c))
+
 # [1.1.0](https://github.com/rafaelnsantos/react-lottie/compare/v1.0.2...v1.1.0) (2020-07-01)
 
 

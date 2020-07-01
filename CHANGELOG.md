@@ -1,3 +1,11 @@
+## [1.3.2](https://github.com/rafaelnsantos/react-lottie/compare/v1.3.1...v1.3.2) (2020-07-01)
+
+
+### Bug Fixes
+
+* release config ([952c947](https://github.com/rafaelnsantos/react-lottie/commit/952c9473d793e331caf7fed8ef90bd9737be1533))
+* remove unused script ([2ebc422](https://github.com/rafaelnsantos/react-lottie/commit/2ebc4220b245800f09b0c93c7882c1de651b8413))
+
 ## [1.3.1](https://github.com/rafaelnsantos/react-lottie/compare/v1.3.0...v1.3.1) (2020-07-01)
 
 

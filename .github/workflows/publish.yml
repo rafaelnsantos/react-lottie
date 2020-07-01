@@ -11,6 +11,7 @@ on:
 env:
   NPM_TOKEN: ${{secrets.NPM_TOKEN}}
   GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+  SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
 jobs:
   build:
@@ -23,7 +24,6 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
-          
 
     - name: Cache node_modules
       uses: actions/cache@v2
@@ -39,3 +39,6 @@ jobs:
         yarn build
         yarn release
         npm publish --access public
+
+    - name: SonarCloud Scan
+      uses: sonarsource/sonarcloud-github-action@master

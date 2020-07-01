@@ -33,12 +33,15 @@ jobs:
         restore-keys: |
           node_modules-
 
-    - name: Release and publish
+    - name: Install and build
       run: |
         yarn --frozen-lockfile
         yarn build
-        yarn release
-        npm publish --access public
 
     - name: SonarCloud Scan
       uses: sonarsource/sonarcloud-github-action@master
+
+    - name: Release and publish
+      run: |
+        yarn release
+        npm publish --access public

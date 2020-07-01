@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/rafaelnsantos/react-lottie/compare/v1.1.1...v1.2.0) (2020-07-01)
+
+
+### Bug Fixes
+
+* omit ref and remove onLoaded ([63d0d82](https://github.com/rafaelnsantos/react-lottie/commit/63d0d82d300902907f9c79e5eca874d5ca32b6f0))
+
+
+### Features
+
+* generate sourcemap ([0cbc01f](https://github.com/rafaelnsantos/react-lottie/commit/0cbc01f0680b4f82269e8951490118fde97d5cee))
+
 ## [1.1.1](https://github.com/rafaelnsantos/react-lottie/compare/v1.1.0...v1.1.1) (2020-07-01)
 
 

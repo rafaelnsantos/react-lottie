@@ -64,7 +64,7 @@
     "semantic-release": "^17.0.8",
     "tslib": "^2.0.0",
     "ttypescript": "^1.5.10",
-    "typescript": "^3.9.3",
+    "typescript": "^3.9.6",
     "typescript-transform-paths": "^1.1.14"
   },
   "config": {

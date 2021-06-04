@@ -20,7 +20,7 @@
     "react": "^16.13.1"
   },
   "dependencies": {
-    "lottie-web": "^5.7.0"
+    "lottie-web": "^5.7.10"
   },
   "main": "dist/index.js",
   "types": "types/index.d.ts",
